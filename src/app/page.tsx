@@ -1,7 +1,7 @@
-import Home from "@/features/home/home";
+import Pdd2026 from '@/features/pdd2026'
 
 const HomePage = () => {
-  return <Home />;
-};
+  return <Pdd2026 />
+}
 
-export default HomePage;
+export default HomePage
