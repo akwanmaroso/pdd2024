@@ -1,2 +1,1 @@
-# PDD 2024
-
+# Palu Developer Day by HammerCode
