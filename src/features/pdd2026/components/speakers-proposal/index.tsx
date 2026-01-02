@@ -34,9 +34,12 @@ Thank you!`;
       <div className="mx-auto max-w-6xl px-5">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl">
-            Become a <span className="text-sky-500">Speaker</span>
+            Become a{" "}
+            <span className="from-pdd-purple to-pdd-blue bg-linear-to-r bg-clip-text text-transparent">
+              Speaker
+            </span>
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-blue-200 md:text-xl">
+          <p className="text-pdd-light/80 mx-auto max-w-3xl text-lg md:text-xl">
             Share your expertise with the biggest community-led developer
             conference in Palu City. Submit your proposal now!
           </p>
@@ -45,12 +48,12 @@ Thank you!`;
         <div className="mb-12 text-center">
           <button
             onClick={handleEmailClick}
-            className="group relative inline-flex transform items-center gap-3 rounded-lg bg-linear-to-r from-sky-600 to-blue-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:from-sky-500 hover:to-blue-500 hover:shadow-xl hover:shadow-sky-500/50"
+            className="group from-pdd-purple hover:from-pdd-purple/90 hover:shadow-pdd-purple/50 to-pdd-blue hover:to-pdd-blue/90 relative inline-flex transform items-center gap-3 rounded-lg bg-linear-to-r px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             <Mic className="h-5 w-5" />
             <span>Submit Your Proposal</span>
           </button>
-          <p className="mt-4 text-sm text-blue-300">
+          <p className="text-pdd-light/60 mt-4 text-sm">
             Click to send your proposal via email
           </p>
         </div>

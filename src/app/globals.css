@@ -8,8 +8,14 @@
   --color-darkGray: #333333;
   --color-mediumGray: #f5f5f5;
 
-  --color-primaryBlack-800: #131b24;
-  --color-primaryBlack-900: #06090c;
+  --color-primaryBlack-800: #0f141a;
+  --color-primaryBlack-900: #090c10;
+
+  /* PDD2026 Theme Colors */
+  --color-pdd-light: #e8e8e8;
+  --color-pdd-purple: #d87eff;
+  --color-pdd-blue: #026ee6;
+  --color-pdd-dark-blue: #1556b9;
 }
 
 /*
@@ -40,11 +46,23 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #39a1f7, #cae3f1);
+  background: linear-gradient(to bottom, #e8e8e8, #d87eff, #026ee6, #1556b9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-emphasis-color: transparent;
+}
+
+.gradient-text-horizontal {
+  background: linear-gradient(to right, #d87eff, #026ee6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+}
+
+.pdd2026-gradient-bg {
+  background: linear-gradient(to bottom, #e8e8e8, #d87eff, #026ee6, #1556b9);
 }
 
 .glass-effect {

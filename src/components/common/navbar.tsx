@@ -33,7 +33,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between">
           <Link href="/">
             <Image
-              src="/assets/logos/ic_pdd24.svg"
+              src="/assets/logos/ic_pdd26.svg"
               alt="pdd-2024-logo"
               width={42}
               height={42}
@@ -45,7 +45,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-6">
             {navLists.map((nav) => (
               <Link key={nav.id} href={nav.navigate_url}>
-                <li className="group relative cursor-pointer text-blue-200 transition-colors duration-300 hover:text-sky-400">
+                <li className="group text-pdd-light hover:text-pdd-purple relative cursor-pointer transition-colors duration-300">
                   {nav.name}
                 </li>
               </Link>

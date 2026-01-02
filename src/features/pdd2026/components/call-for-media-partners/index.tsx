@@ -35,9 +35,12 @@ Thank you!`;
       <div className="mx-auto max-w-6xl px-5">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl">
-            Media <span className="text-purple-500">Partnership</span>
+            Media{" "}
+            <span className="from-pdd-purple to-pdd-blue bg-linear-to-r bg-clip-text text-transparent">
+              Partnership
+            </span>
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-blue-200 md:text-xl">
+          <p className="text-pdd-light/80 mx-auto max-w-3xl text-lg md:text-xl">
             Join us as a media partner to cover the biggest developer conference
             in Palu City and amplify the voice of tech community.
           </p>
@@ -46,12 +49,12 @@ Thank you!`;
         <div className="text-center">
           <button
             onClick={handleEmailClick}
-            className="group relative inline-flex transform items-center gap-3 rounded-lg bg-linear-to-r from-purple-600 to-purple-700 px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:from-purple-500 hover:to-purple-600 hover:shadow-xl hover:shadow-purple-500/50"
+            className="group from-pdd-purple hover:from-pdd-purple/90 hover:shadow-pdd-purple/50 to-pdd-blue hover:to-pdd-blue/90 relative inline-flex transform items-center gap-3 rounded-lg bg-linear-to-r px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             <Radio className="h-5 w-5" />
             <span>Become a Media Partner</span>
           </button>
-          <p className="mt-4 text-sm text-blue-300">
+          <p className="text-pdd-light/60 mt-4 text-sm">
             Partner with us to spread the word
           </p>
         </div>

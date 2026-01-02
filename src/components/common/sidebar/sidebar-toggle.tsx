@@ -33,7 +33,7 @@ const SidebarToggle = ({ setShowSidebar }: SidebarToggleProps) => {
       } border-b-primaryBlack-800 border-b transition-colors duration-300 md:hidden`}
     >
       <Image
-        src="/assets/logos/ic_pdd24.svg"
+        src="/assets/logos/ic_pdd26.svg"
         alt="pdd-2024-logo"
         width={36}
         height={36}

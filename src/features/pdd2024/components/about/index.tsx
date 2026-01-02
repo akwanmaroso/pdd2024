@@ -7,7 +7,7 @@ const About = () => {
         <div className="flex items-center justify-center gap-8 max-md:flex-wrap md:items-start md:justify-between">
           <div className="flex shrink-0 items-center gap-8 md:basis-[30%]">
             <Image
-              src="/assets/logos/ic_pdd24.svg"
+              src="/assets/logos/ic_pdd26.svg"
               alt="pdd-2024-logo"
               width={42}
               height={42}

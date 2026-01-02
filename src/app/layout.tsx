@@ -9,8 +9,8 @@ import { StarsBackground } from "@/components/ui/stars-background";
 const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: " Palu Developer Day 2024",
-  description: "PDD2024 by HammerCode",
+  title: " Palu Developer Day 2026",
+  description: "PDD2026 by HammerCode",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/ic_pdd24_light.svg" sizes="any" />
+        <link rel="icon" href="/logos/ic_pdd26.svg" sizes="any" />
       </head>
       <body className={sora.className}>
         <Navbar />

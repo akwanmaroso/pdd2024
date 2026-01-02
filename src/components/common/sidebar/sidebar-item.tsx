@@ -11,7 +11,7 @@ const SidebarItem = ({ setShowSidebar }: SidebarItemProps) => {
       {navLists.map((nav) => (
         <Link key={nav.id} href={nav.navigate_url}>
           <li
-            className="text-white/60 hover:text-white"
+            className="text-pdd-light/60 hover:text-pdd-purple"
             onClick={() => setShowSidebar(false)}
           >
             {nav.name}
