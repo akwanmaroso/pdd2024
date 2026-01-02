@@ -12,13 +12,13 @@ const Sidebar = () => {
   return (
     <>
       <nav
-        className={`md:hidden fixed w-60 min-h-screen bg-primaryBlack-800 border-l border-white/40 p-5 ease-in-out duration-300 z-40 top-0 right-0 ${
+        className={`bg-primaryBlack-800 fixed top-0 right-0 z-40 min-h-screen w-60 border-l border-white/40 p-5 duration-300 ease-in-out md:hidden ${
           showSidebar ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-end">
           <button
-            className="p-1 border border-white/60 rounded-md"
+            className="rounded-md border border-white/60 p-1"
             onClick={() => setShowSidebar(false)}
           >
             <X className="size-5 text-white/60" />

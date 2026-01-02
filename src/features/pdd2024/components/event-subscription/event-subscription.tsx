@@ -34,11 +34,13 @@ const EventSubscriptionOld = () => {
 
   return (
     <div className="bg-primaryBlack-800 bg-opacity-[0.4] my-10">
-      <div className="max-w-6xl mx-auto px-5 py-16">
-        <div className="flex flex-col md:flex-row justify-center md:justify-between w-full items-center md:items-end">
+      <div className="mx-auto max-w-6xl px-5 py-16">
+        <div className="flex w-full flex-col items-center justify-center md:flex-row md:items-end md:justify-between">
           <div className="mb-8 md:mb-0 md:w-1/2">
-            <p className="text-2xl md:mb-4 mb-2 text-blue-200 font-semibold">What to expect:</p>
-            <ul className="md:text-base text-sm list-none space-y-2 text-blue-100">
+            <p className="mb-2 text-2xl font-semibold text-blue-200 md:mb-4">
+              What to expect:
+            </p>
+            <ul className="list-none space-y-2 text-sm text-blue-100 md:text-base">
               <li>🎤 Inspiring keynote speakers</li>
               <li>💡 Cutting-edge AI demonstrations</li>
               <li>🤝 Networking opportunities</li>
@@ -46,23 +48,31 @@ const EventSubscriptionOld = () => {
             </ul>
           </div>
           <form className="md:w-1/2" onSubmit={handleSubscription}>
-            <p className="text-lg mb-4 text-blue-200 font-semibold">Stay updated:</p>
+            <p className="mb-4 text-lg font-semibold text-blue-200">
+              Stay updated:
+            </p>
             <div className="flex items-center">
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none bg-blue-800 bg-opacity-50 rounded-l-lg w-full text-white p-3 leading-tight focus:outline-hidden focus:bg-opacity-75 transition-all duration-200"
+                className="bg-opacity-50 focus:bg-opacity-75 w-full appearance-none rounded-l-lg bg-blue-800 p-3 leading-tight text-white transition-all duration-200 focus:outline-hidden"
                 type="email"
                 placeholder="Enter your email"
                 aria-label="Email address"
               />
               <button
                 disabled={isLoading || isSuccess}
-                className={`${isLoading || isSuccess ? "cursor-not-allowed" : "cursor-pointer"}  ${
-                  isSuccess ? "bg-sky-600" : "bg-blue-600 hover:bg-blue-700 active:bg-blue-500"
-                } shrink-0 text-sm text-white py-3 px-4 rounded-r-lg transition duration-300`}
+                className={`${isLoading || isSuccess ? "cursor-not-allowed" : "cursor-pointer"} ${
+                  isSuccess
+                    ? "bg-sky-600"
+                    : "bg-blue-600 hover:bg-blue-700 active:bg-blue-500"
+                } shrink-0 rounded-r-lg px-4 py-3 text-sm text-white transition duration-300`}
               >
-                {isLoading ? "Loading..." : isSuccess ? "Email Sent!" : "Notify Me"}
+                {isLoading
+                  ? "Loading..."
+                  : isSuccess
+                    ? "Email Sent!"
+                    : "Notify Me"}
               </button>
             </div>
           </form>

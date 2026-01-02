@@ -27,7 +27,9 @@ const EventDate = () => {
       // Menyimpan hasil dalam bentuk number
       setTimeLeft({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        hours: Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((distance % (1000 * 60)) / 1000),
       });
@@ -45,11 +47,15 @@ const EventDate = () => {
   const formatTime = (time: number) => String(time).padStart(2, "0");
 
   return (
-    <div className="md:mt-8 mt-4 grid grid-cols-4 gap-4 text-center">
+    <div className="mt-4 grid grid-cols-4 gap-4 text-center md:mt-8">
       {Object.entries(timeLeft).map(([key, value]) => (
         <div key={key} className="flex flex-col items-center">
-          <span className="text-2xl font-bold text-sky-300">{formatTime(value)}</span>
-          <p className="text-sm text-blue-200">{key.charAt(0).toUpperCase() + key.slice(1)}</p>
+          <span className="text-2xl font-bold text-sky-300">
+            {formatTime(value)}
+          </span>
+          <p className="text-sm text-blue-200">
+            {key.charAt(0).toUpperCase() + key.slice(1)}
+          </p>
         </div>
       ))}
     </div>

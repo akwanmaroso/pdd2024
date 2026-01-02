@@ -1,0 +1,6 @@
+# Ignore built files and dependencies
+.next
+.cache
+node_modules
+next-env.d.ts
+pnpm-lock.yaml

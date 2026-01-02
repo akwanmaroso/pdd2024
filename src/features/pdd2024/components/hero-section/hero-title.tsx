@@ -1,11 +1,11 @@
 const HeroTitle = () => {
   return (
-    <div className="flex md:flex-row flex-col-reverse justify-between md:items-start items-center md:gap-0 gap-4">
-      <div className="flex flex-col justify-center items-center md:gap-2 gap-4 w-full">
-        <h1 className="gradient-text md:text-4xl md:text-left text-center text-3xl md:h-14 inline-block font-bold">
+    <div className="flex flex-col-reverse items-center justify-between gap-4 md:flex-row md:items-start md:gap-0">
+      <div className="flex w-full flex-col items-center justify-center gap-4 md:gap-2">
+        <h1 className="gradient-text inline-block text-center text-3xl font-bold md:h-14 md:text-left md:text-4xl">
           Palu Developer Day 2024
         </h1>
-        <h2 className="text-lg md:text-5xl md:text-left text-center font-semibold md:mb-8 mb-6 text-blue-100 md:leading-[70px]">
+        <h2 className="mb-6 text-center text-lg font-semibold text-blue-100 md:mb-8 md:text-left md:text-5xl md:leading-[70px]">
           Driving Technological Advancements:
           <br />
           AI-Powered IT from Concept to Reality

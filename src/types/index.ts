@@ -33,7 +33,7 @@ export type SponsorProposal = {
   contactPerson: string;
   email: string;
   phoneNumber: string;
-  sponsorshipLevel: 'Gold' | 'Silver' | 'Bronze';
+  sponsorshipLevel: "Gold" | "Silver" | "Bronze";
   description: string;
 };
 

@@ -34,29 +34,37 @@ const Newsletter = () => {
 
   return (
     <div className="bg-primaryBlack-800 bg-opacity-[0.4] my-10">
-      <div className="max-w-6xl mx-auto px-5 py-16">
-        <div className="flex md:flex-row flex-col md:items-end items-start justify-between gap-8">
+      <div className="mx-auto max-w-6xl px-5 py-16">
+        <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div className="space-y-2">
             <h1 className="text-3xl font-semibold text-sky-300">Newsletter</h1>
-            <p className="text-sm">Stay tune and get in touch with our update on this event!</p>
+            <p className="text-sm">
+              Stay tune and get in touch with our update on this event!
+            </p>
           </div>
-          <form className="md:w-1/2 w-full" onSubmit={handleSubscription}>
+          <form className="w-full md:w-1/2" onSubmit={handleSubscription}>
             <div className="flex items-center">
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none bg-sky-800 bg-opacity-50 rounded-l-lg w-full text-white p-3 leading-tight focus:outline-hidden focus:bg-opacity-75 transition-all duration-200"
+                className="bg-opacity-50 focus:bg-opacity-75 w-full appearance-none rounded-l-lg bg-sky-800 p-3 leading-tight text-white transition-all duration-200 focus:outline-hidden"
                 type="email"
                 placeholder="Enter your email"
                 aria-label="Email address"
               />
               <button
                 disabled={isLoading || isSuccess}
-                className={`${isLoading || isSuccess ? "cursor-not-allowed" : "cursor-pointer"}  ${
-                  isSuccess ? "bg-sky-600" : "bg-sky-600 hover:bg-sky-700 active:bg-sky-500"
-                } shrink-0 text-sm text-white py-3 px-4 rounded-r-lg transition duration-300`}
+                className={`${isLoading || isSuccess ? "cursor-not-allowed" : "cursor-pointer"} ${
+                  isSuccess
+                    ? "bg-sky-600"
+                    : "bg-sky-600 hover:bg-sky-700 active:bg-sky-500"
+                } shrink-0 rounded-r-lg px-4 py-3 text-sm text-white transition duration-300`}
               >
-                {isLoading ? "Loading..." : isSuccess ? "Email Sent!" : "Notify Me"}
+                {isLoading
+                  ? "Loading..."
+                  : isSuccess
+                    ? "Email Sent!"
+                    : "Notify Me"}
               </button>
             </div>
           </form>

@@ -27,7 +27,7 @@ export default function RootLayout({
         <Navbar />
         <Sidebar />
         <div className="relative">
-          <div className="mt-14 md:mt-28 text-white relative z-10">
+          <div className="relative z-10 mt-14 text-white md:mt-28">
             {children}
           </div>
           <ShootingStars />

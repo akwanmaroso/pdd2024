@@ -1,35 +1,35 @@
-'use client'
-import { useState, useEffect } from 'react'
-import { navLists } from '@/constants'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import { useState, useEffect } from "react";
+import { navLists } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div
-      className={`fixed w-full top-0 z-30 transition-all ${
-        isScrolled ? 'bg-primaryBlack-800' : 'bg-opacity-0'
-      } bg-primaryBlack-800 border-b border-b-primaryBlack-800 duration-300 max-md:hidden`}
+      className={`fixed top-0 z-30 w-full transition-all ${
+        isScrolled ? "bg-primaryBlack-800" : "bg-opacity-0"
+      } bg-primaryBlack-800 border-b-primaryBlack-800 border-b duration-300 max-md:hidden`}
     >
-      <div className="max-w-6xl mx-auto p-5">
+      <div className="mx-auto max-w-6xl p-5">
         <nav className="flex items-center justify-between">
           <Link href="/">
             <Image
@@ -37,7 +37,7 @@ const Navbar = () => {
               alt="pdd-2024-logo"
               width={42}
               height={42}
-              className="md:w-14 md:h-14"
+              className="md:h-14 md:w-14"
             />
           </Link>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-6">
             {navLists.map((nav) => (
               <Link key={nav.id} href={nav.navigate_url}>
-                <li className="relative text-blue-200 hover:text-sky-400 transition-colors duration-300 cursor-pointer group">
+                <li className="group relative cursor-pointer text-blue-200 transition-colors duration-300 hover:text-sky-400">
                   {nav.name}
                 </li>
               </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

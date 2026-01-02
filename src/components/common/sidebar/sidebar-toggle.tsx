@@ -28,9 +28,9 @@ const SidebarToggle = ({ setShowSidebar }: SidebarToggleProps) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-20 flex justify-between p-5 bg-primaryBlack-800 bg-opacity-0 ${
+      className={`bg-primaryBlack-800 bg-opacity-0 fixed top-0 right-0 left-0 z-20 flex justify-between p-5 ${
         isScrolled && "bg-opacity-100"
-      } border-b border-b-primaryBlack-800 transition-colors duration-300 md:hidden`}
+      } border-b-primaryBlack-800 border-b transition-colors duration-300 md:hidden`}
     >
       <Image
         src="/assets/logos/ic_pdd24.svg"
@@ -39,7 +39,7 @@ const SidebarToggle = ({ setShowSidebar }: SidebarToggleProps) => {
         height={36}
       />
       <button
-        className="px-2 py-1 border border-white/60 rounded-md"
+        className="rounded-md border border-white/60 px-2 py-1"
         onClick={() => setShowSidebar(true)}
       >
         <Menu className="size-5 text-white/60" />

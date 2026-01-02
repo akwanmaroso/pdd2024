@@ -1,36 +1,36 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 const About = () => {
   return (
     <div className="py-24">
-      <div className="max-w-6xl mx-auto px-5">
-        <div className="relative bg-primaryBlack-800 bg-opacity-60 backdrop-blur-xs border border-sky-500/20 rounded-2xl p-8 md:p-12">
-          <div className="flex flex-col items-center text-center space-y-8">
+      <div className="mx-auto max-w-6xl px-5">
+        <div className="bg-primaryBlack-800 bg-opacity-60 relative rounded-2xl border border-sky-500/20 p-8 backdrop-blur-xs md:p-12">
+          <div className="flex flex-col items-center space-y-8 text-center">
             <div className="flex items-center justify-center gap-6">
-              <div className="relative group">
-                <div className="absolute inset-0 bg-sky-500/20 rounded-full blur-lg group-hover:bg-sky-500/30 transition-all"></div>
+              <div className="group relative">
+                <div className="absolute inset-0 rounded-full bg-sky-500/20 blur-lg transition-all group-hover:bg-sky-500/30"></div>
                 <Image
                   src="/assets/logos/ic_pdd24.svg"
                   alt="pdd-2026-logo"
                   width={80}
                   height={80}
-                  className="relative w-20 h-20 md:w-24 md:h-24"
+                  className="relative h-20 w-20 md:h-24 md:w-24"
                 />
               </div>
               <span className="text-sky-400">X</span>
-              <div className="relative group">
-                <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-lg group-hover:bg-blue-500/30 transition-all"></div>
+              <div className="group relative">
+                <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-lg transition-all group-hover:bg-blue-500/30"></div>
                 <Image
                   src="/assets/logos/ic_hmc.svg"
                   alt="hammercode-logo"
                   width={80}
                   height={80}
-                  className="relative w-20 h-20 md:w-24 md:h-24"
+                  className="relative h-20 w-20 md:h-24 md:w-24"
                 />
               </div>
             </div>
 
-            <p className="text-blue-200 leading-relaxed md:text-lg max-w-4xl">
+            <p className="max-w-4xl leading-relaxed text-blue-200 md:text-lg">
               <span className="text-sky-400">Palu Developer Day</span> aims to
               inspire the young generation of Palu City in the field of software
               engineering and technological creativity. The event brings
@@ -43,7 +43,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

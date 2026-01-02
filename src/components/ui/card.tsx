@@ -4,10 +4,10 @@ type CardProps = {
 
 const Card = ({ children }: CardProps) => {
   return (
-    <div className="max-w-6xl mx-auto px-5 py-10 md:min-h-[700px] min-h-[600px] flex flex-col justify-center items-center">
+    <div className="mx-auto flex min-h-[600px] max-w-6xl flex-col items-center justify-center px-5 py-10 md:min-h-[700px]">
       {children}
     </div>
-  )
+  );
 };
 
 export default Card;
