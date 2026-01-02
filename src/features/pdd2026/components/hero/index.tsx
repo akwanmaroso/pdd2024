@@ -1,5 +1,8 @@
 import { Calendar, MapPin, QrCode } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
+const REGISTRATION_URL = "https://tally.so/r/pbyyyV";
 
 const Hero = () => {
   return (
@@ -38,8 +41,11 @@ const Hero = () => {
           <div className="relative">
             <div className="from-pdd-purple/20 to-pdd-blue/20 absolute inset-0 rounded-2xl bg-linear-to-r blur-2xl" />
 
-            <div className="relative flex flex-col items-center gap-4 rounded-2xl border border-white/20 bg-linear-to-br from-white/10 to-white/5 p-6 backdrop-blur-sm">
-              <div className="shadow-pdd-purple/20 rounded-xl shadow-lg">
+            <div className="relative flex flex-col items-center gap-4 rounded-2xl border border-white/20 bg-linear-to-br from-white/10 to-white/5 p-7 backdrop-blur-sm">
+              <Link
+                href={REGISTRATION_URL}
+                className="shadow-pdd-purple/20 rounded-xl shadow-lg transition-transform duration-300 hover:scale-102"
+              >
                 <Image
                   src="/assets/images/qr-code_ticket_pdd2026.png"
                   alt="QR Code Registration Palu Developer Day 2026"
@@ -47,7 +53,7 @@ const Hero = () => {
                   height={360}
                   className="rounded-lg"
                 />
-              </div>
+              </Link>
 
               <div className="space-y-2 text-center">
                 <div className="flex items-center justify-center gap-2">
@@ -55,7 +61,7 @@ const Hero = () => {
                   <p className="font-semibold text-white">Register Now</p>
                 </div>
                 <p className="text-pdd-light/70 text-sm">
-                  Scan QR code to register for the event
+                  Scan or click the QR code to register for the event
                 </p>
               </div>
             </div>
