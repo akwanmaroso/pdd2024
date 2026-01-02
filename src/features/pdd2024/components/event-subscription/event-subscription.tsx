@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import axios from "axios";
-import { div } from "framer-motion/client";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
