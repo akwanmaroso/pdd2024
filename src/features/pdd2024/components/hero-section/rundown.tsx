@@ -7,7 +7,7 @@ const Rundown = () => {
         <h2 className="md:text-5xl text-3xl font-bold text-center">
           Event <span className="text-sky-500">Agenda</span>
         </h2>
-        <div className="flex flex-col gap-4 max-w-[38rem] w-full">
+        <div className="flex flex-col gap-4 max-w-152 w-full">
           {rundownLists.map((value, index) => (
             <div key={index} className="bg-primaryBlack-800 space-y-4 p-4">
               <div className="flex items-center justify-between gap-2">

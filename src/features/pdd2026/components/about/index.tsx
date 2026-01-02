@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="py-24">
       <div className="max-w-6xl mx-auto px-5">
-        <div className="relative bg-primaryBlack-800 bg-opacity-60 backdrop-blur-sm border border-sky-500/20 rounded-2xl p-8 md:p-12">
+        <div className="relative bg-primaryBlack-800 bg-opacity-60 backdrop-blur-xs border border-sky-500/20 rounded-2xl p-8 md:p-12">
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="flex items-center justify-center gap-6">
               <div className="relative group">

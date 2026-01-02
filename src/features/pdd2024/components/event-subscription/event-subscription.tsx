@@ -51,7 +51,7 @@ const EventSubscriptionOld = () => {
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none bg-blue-800 bg-opacity-50 rounded-l-lg w-full text-white p-3 leading-tight focus:outline-none focus:bg-opacity-75 transition-all duration-200"
+                className="appearance-none bg-blue-800 bg-opacity-50 rounded-l-lg w-full text-white p-3 leading-tight focus:outline-hidden focus:bg-opacity-75 transition-all duration-200"
                 type="email"
                 placeholder="Enter your email"
                 aria-label="Email address"
@@ -60,7 +60,7 @@ const EventSubscriptionOld = () => {
                 disabled={isLoading || isSuccess}
                 className={`${isLoading || isSuccess ? "cursor-not-allowed" : "cursor-pointer"}  ${
                   isSuccess ? "bg-sky-600" : "bg-blue-600 hover:bg-blue-700 active:bg-blue-500"
-                } flex-shrink-0 text-sm text-white py-3 px-4 rounded-r-lg transition duration-300`}
+                } shrink-0 text-sm text-white py-3 px-4 rounded-r-lg transition duration-300`}
               >
                 {isLoading ? "Loading..." : isSuccess ? "Email Sent!" : "Notify Me"}
               </button>

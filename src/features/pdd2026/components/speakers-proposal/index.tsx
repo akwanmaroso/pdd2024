@@ -45,7 +45,7 @@ Thank you!`
         <div className="text-center mb-12">
           <button
             onClick={handleEmailClick}
-            className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-sky-500/50"
+            className="group relative inline-flex items-center gap-3 bg-linear-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-sky-500/50"
           >
             <Mic className="w-5 h-5" />
             <span>Submit Your Proposal</span>

@@ -5,13 +5,13 @@ const Header = () => {
     <section className="max-w-6xl mx-auto px-5 flex flex-col justify-center items-center py-24">
       <div className="text-center space-y-6">
         <div className="inline-block">
-          <span className="bg-gradient-to-r from-sky-500 to-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-full">
+          <span className="bg-linear-to-r from-sky-500 to-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-full">
             Coming Soon
           </span>
         </div>
 
         <h1 className="md:text-6xl text-4xl font-bold leading-tight">
-          <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
             Palu Developer Day
           </span>
           <br />

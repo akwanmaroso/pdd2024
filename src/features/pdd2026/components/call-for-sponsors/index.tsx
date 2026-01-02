@@ -67,7 +67,7 @@ Thank you!`
         <div className="text-center mb-12">
           <button
             onClick={handleEmailClick}
-            className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/50"
+            className="group relative inline-flex items-center gap-3 bg-linear-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/50"
           >
             <Award className="w-5 h-5" />
             <span>Become a Sponsor</span>
@@ -83,7 +83,7 @@ Thank you!`
               <div className="text-center space-y-4">
                 <div className="flex justify-center">
                   <div
-                    className={`bg-gradient-to-br ${tier.color} p-3 rounded-lg text-white`}
+                    className={`bg-linear-to-br ${tier.color} p-3 rounded-lg text-white`}
                   >
                     {tier.icon}
                   </div>

@@ -46,7 +46,7 @@ Thank you!`
         <div className="text-center">
           <button
             onClick={handleEmailClick}
-            className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/50"
+            className="group relative inline-flex items-center gap-3 bg-linear-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/50"
           >
             <Radio className="w-5 h-5" />
             <span>Become a Media Partner</span>
