@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="relative">
             <div className="from-pdd-purple/20 to-pdd-blue/20 absolute inset-0 rounded-2xl bg-linear-to-r blur-2xl" />
 
-            <div className="relative flex flex-col items-center gap-4 rounded-2xl border border-white/20 bg-linear-to-br from-white/10 to-white/5 p-7 backdrop-blur-sm">
+            <div className="relative flex flex-col items-center gap-5 rounded-2xl border border-white/20 bg-linear-to-br from-white/10 to-white/5 p-7 backdrop-blur-sm">
               <Link
                 href={REGISTRATION_URL}
                 className="shadow-pdd-purple/20 rounded-xl shadow-lg transition-transform duration-300 hover:scale-102"
@@ -61,7 +61,8 @@ const Hero = () => {
                   <p className="font-semibold text-white">Register Now</p>
                 </div>
                 <p className="text-pdd-light/70 text-sm">
-                  Scan or click the QR code to register for the event
+                  <strong>Scan or click the QR code</strong> to register for the
+                  event
                 </p>
               </div>
             </div>
